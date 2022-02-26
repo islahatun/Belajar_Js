@@ -10,21 +10,59 @@
     
 
     <script>
-        var total ;
-var kubusA;
-var kubusB;
+    
 function VolumeKubus(a,b){
-
+    var total ;
+    var kubusA;
+var kubusB;
+var total;
     kubusA = a*a*a;
     kubusB = b*b*b;
-
     total = kubusA +kubusB;
-
     return total;
 
 }
 
-console.log(VolumeKubus (3,4));
+function kali(penjumlahan,VolumeKubus){
+    return penjumlahan + VolumeKubus;
+}
+
+
+function penjumlahan(){
+var total ;
+total = a+b;
+return total;
+}
+// promt = untuk input pada alert
+// parseInt = mengubah string ke integer 
+var a = parseInt( prompt('Masukan Nilai A ='));
+var b = parseInt( prompt('Masukan Nilai b ='));
+
+var hasil = penjumlahan(a,b);
+alert(hasil);
+// console.log(VolumeKubus (a,b));
+
+// memasukkan argumen dengan function
+// console.log(kali(penjumlahan(a,b),VolumeKubus(a,b)));
+
+// jika argumen melebihi parameter yang disediakan maka argumen paling terakhir diabaikan
+// jika parameter melebihi argumen yang ada maka parameter yang terakhir bernilai default (undifind)
+
+// ARGUMENTS-> argumen array
+
+function tambah(){
+var hasil =0;
+// looping arguments
+for(var i =0; i < arguments.length; i++){
+    hasil += arguments[i];
+}
+return hasil;
+}
+
+var a = tambah(1,2,3);
+
+console.log(a);
+
     </script>
 </body>
 </html>
